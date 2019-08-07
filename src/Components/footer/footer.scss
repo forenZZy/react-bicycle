@@ -1,0 +1,108 @@
+.footer {
+  grid-column: 1 / -1;
+  padding: 9rem 0;
+  background-color: rgb(247, 247, 247);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footer-content {
+  grid-column: 2 / -2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-content {
+    grid-column: 1 / -1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-content > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+.footer-info {
+  line-height: normal;
+  font-style: italic;
+}
+
+.footer-info strong {
+  font-style: normal;
+}
+
+.footer-credits {
+  font-style: italic;
+  display: flex;
+}
+
+.footer-credits img {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-credits img {
+    width: 53px;
+  }
+  .footer-credits {
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    padding: 5rem 3rem;
+  }
+}
+
+.btn-round {
+  width: 3.6rem;
+  height: 3.6rem;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-round svg {
+  fill: rgb(255, 255, 255);
+  width: 24px;
+  height: 24px;
+}
+
+.btn-twitter {
+  background-color: rgb(0, 172, 237);
+  transition: background-color 0.3s;
+}
+
+.btn-twitter:hover {
+  background-color: rgb(0, 135, 186);
+}
+
+.btn-facebook {
+  background-color: rgb(59, 89, 152);
+  transition: background-color 0.3s;
+}
+
+.btn-facebook:hover {
+  background-color: rgb(45, 67, 115);
+}
+
+.btn-pinterest {
+  background-color: rgb(203, 32, 39);
+  transition: background-color 0.3s;
+}
+
+.btn-pinterest:hover {
+  background-color: rgb(159, 25, 31);
+}
