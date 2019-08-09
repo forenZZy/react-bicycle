@@ -53,7 +53,7 @@ export class Work extends Component{
                                 </p>
                         </div>
                         <img src={require("../../img/work-6.jpg")} alt="bike pic" className="work-img work-img-6"/>
-                            <img src={require("../../img/work-7.jpg")} alt="bike pic" className="work-img work-img-7"/>
+                        <img src={require("../../img/work-7.jpg")} alt="bike pic" className="work-img work-img-7"/>
             </section>
         )
     }
