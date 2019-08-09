@@ -10,7 +10,7 @@ import {Footer} from "./components/footer";
 
 export function App (){
   return (
-      <div  className="body fixed-nav" >
+      <div  className="main-div fixed-nav" >
         <Header  />
           <div className="container">
               <About />
