@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class Footer extends Component{
-    render(){
+export function Footer (){
         return (
             <footer className="footer">
                 <div className="footer-content">
@@ -31,10 +30,9 @@ export class Footer extends Component{
                         </a>
                     </div>
                     <p className="footer-credits">
-                        Handcrafted by <img src={require("../../img/yebo-logo.png")} alt="yebo logo"/>
+                        Handcrafted by <img src={require("../../res/img/yebo-logo.png")} alt="yebo logo"/>
                     </p>
                 </div>
             </footer>
         )
-    }
 }

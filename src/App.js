@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Header} from "./components/header";
 import {About} from "./components/about";
 import {Work} from "./components/work";
@@ -8,10 +8,7 @@ import {Contact} from "./components/contact";
 import {Footer} from "./components/footer";
 
 
-export class App extends Component{
-
-
-  render(){
+export function App (){
   return (
       <div  className="body fixed-nav" >
         <Header  />
@@ -25,5 +22,4 @@ export class App extends Component{
           </div>
       </div>
      )
-    }
   }

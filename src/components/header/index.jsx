@@ -25,13 +25,13 @@ export class Header extends Component{
                 <nav className="nav">
                     <a href="#about" className="nav-link">About us</a>
                     <a href="#work" className="nav-link">Work</a>
-                    <a href="#" className="nav-link"><img src={require("../../img/logo.png")} className="nav-logo" alt="logo graphics"/></a>
+                    <a href="#" className="nav-link"><img src={require("../../res/img/logo.png")} className="nav-logo" alt="logo graphics"/></a>
                     <a href="#shop" className="nav-link">Shop</a>
                     <a href="#contact" className="nav-link">Contact</a>
                 </nav>
 
                 <nav className="mobile-nav">
-                    <a href="#"><img src={require("../../img/logo.png")} alt="logo graphics" /></a>
+                    <a href="#"><img src={require("../../res/img/logo.png")} alt="logo graphics" /></a>
                     <button className="btn-menu" onClick={this.handleClick}>
                         <span className="btn-line"></span>
                     </button>

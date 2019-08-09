@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class About extends Component{
-    render(){
+export function About(){
         return (
             <section id="about" className="about-us">
                 <div className="about-us-content">
-                    <img src={require("../../img/icon-about.png")} alt="icon" className="icon"/>
+                    <img src={require("../../res/img/icon-about.png")} alt="icon" className="icon"/>
                         <h2 className="heading-1 margin-m">A new generation of vintage bike</h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -16,5 +15,4 @@ export class About extends Component{
                 </div>
             </section>
         )
-    }
 }
