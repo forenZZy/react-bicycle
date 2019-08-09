@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import Header from "./Components/header/header";
-import About from "./Components/about/About";
-import Work from "./Components/work/Work";
-import Twits from "./Components/slider/Twits";
-import Shop from "./Components/shop/Shop";
-import Contact from "./Components/contact/Contact";
-import Footer from "./Components/footer/Footer";
+import {Header} from "./components/header";
+import {About} from "./components/about";
+import {Work} from "./components/work";
+import {Twits} from "./components/slider";
+import {Shop} from "./components/shop";
+import {Contact} from "./components/contact";
+import {Footer} from "./components/footer";
 
 
-class App extends Component{
+export class App extends Component{
 
 
   render(){
@@ -23,10 +23,7 @@ class App extends Component{
               <Contact />
               <Footer />
           </div>
-
       </div>
      )
     }
   }
-
-export default App;

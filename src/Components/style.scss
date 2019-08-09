@@ -1,31 +1,35 @@
+@import 'colors';
 
 *,
 *::before,
 *::after {
-  outline: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  outline: none;
   box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth
-}
-
-@media only screen and (max-width: 1000px) {
-  html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 1000px) {
     font-size: 50%;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+  }
+  @media only screen and (max-width: 750px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
+
 .body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
-  color: rgb(132, 135, 137);
+  color: $oslo-grey;
 }
 
 a {
@@ -35,49 +39,44 @@ a {
 strong {
   font-weight: bold;
 }
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-  }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
 
 .margin-m {
   margin-bottom: 2rem;
 }
 
 .margin-s {
-
   margin-bottom: 1rem;
 }
 
 .heading-1 {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
+  font-weight: bold;
   letter-spacing: 3px;
-  color: rgb(53, 55, 56);
+  color: $cape-cod;
   text-transform: uppercase;
 }
 
 .heading-2 {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
+  font-weight: bold;
   letter-spacing: 2px;
   word-spacing: 3px;
-  color: rgb(53, 55, 56);
-}
+  color: $cape-cod;
 
-.heading-2 span {
-  color: rgb(132, 135, 137);
+  span {
+    color: $oslo-grey;
+  }
 }
 
 .heading-3 {
-  font-style: italic;
   font-size: 2.4rem;
-  color: rgb(132, 135, 137);
-}
-@media only screen and (max-width: 750px) {
-  ::-webkit-scrollbar{
-    display: none;
-  }
+  font-style: italic;
+  color: $oslo-grey;
 }

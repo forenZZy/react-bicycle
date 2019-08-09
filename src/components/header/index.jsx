@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Header extends Component{
+export class Header extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -48,4 +48,3 @@ class Header extends Component{
     }
 }
 
-export default Header;

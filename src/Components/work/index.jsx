@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Work extends Component{
+export class Work extends Component{
     render(){
         return (
             <section id="work" className="work">
@@ -58,5 +58,3 @@ class Work extends Component{
         )
     }
 }
-
-export default Work;

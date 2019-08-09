@@ -1,0 +1,30 @@
+@import '../colors';
+
+.twitter {
+  display: grid;
+  padding: 12rem 0 6rem;
+  text-align: center;
+  background-color: $alabaster;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.twits {
+  grid-column: 2 / 6;
+}
+
+.twit {
+  display: block;
+  opacity: 1;
+}
+
+.twit-text {
+  margin-bottom: 7rem;
+  font-size: 2.4rem;
+  font-style: italic;
+  color: $oslo-grey;
+}
+
+.icon-twitter {
+  fill: $cerulean;
+}

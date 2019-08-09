@@ -1,0 +1,56 @@
+@import '../colors';
+
+.сontact {
+  padding: 11rem 0;
+  text-align: center;
+  grid-column: 3 / span 2;
+  @media only screen and (max-width: 1000px) {
+    grid-column: 2 / span 4;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 11rem 3rem;
+    grid-column: 1 / -1;
+  }
+}
+
+
+.contact-btn {
+  padding: 2rem 4.5rem;
+  margin-left: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $silver-tree;
+  border: 0;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: $ocean-green;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $oslo-grey;
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.contact-form-input {
+  padding-left: 3rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: $scarpa-flow;
+  border: 1px solid $oslo-grey-rgba;
+
+  &::placeholder {
+    color: $scarpa-flow-rgba;
+  }
+}

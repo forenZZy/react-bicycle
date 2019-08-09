@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Slider  from 'react-slick';
-class Twits extends Component{
+
+ export class Twits extends Component{
     render(){
 
         const settings = {
@@ -57,5 +58,3 @@ class Twits extends Component{
         )
     }
 }
-
-export default Twits;

@@ -1,0 +1,106 @@
+@import '../colors';
+
+.footer {
+  display: grid;
+  padding: 9rem 0;
+  background-color: $alabaster;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(6, 1fr);
+
+  @media only screen and (max-width: 800px) {
+    padding: 5rem 3rem;
+  }
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column: 2 / -2;
+  @media only screen and (max-width: 800px) {
+    grid-column: 1 / -1;
+  }
+  @media only screen and (max-width: 600px) {
+    .footer-content > * {
+      display: block;
+      width: 100%;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+  }
+}
+
+
+.footer-info {
+  font-style: italic;
+  line-height: normal;
+
+  strong {
+    font-style: normal;
+  }
+}
+
+.footer-credits {
+  display: flex;
+  font-style: italic;
+
+  img {
+    margin-left: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+
+    img {
+      width: 53px;
+    }
+  }
+}
+
+
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: .5rem;
+  color: $white;
+  border-radius: 50%;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $white;
+  }
+}
+
+.btn-twitter {
+  background-color: $cerulean;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $bondi-blue;
+  }
+}
+
+
+.btn-facebook {
+  background-color: $chambray;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $astronaut;
+  }
+}
+
+
+.btn-pinterest {
+  background-color: $cardinal;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $tamarilo;
+  }
+}
