@@ -36,6 +36,12 @@
       grid-column: 3 / span 2;
       grid-row: 4 / span 4;
 
+      @media only screen and (max-width: 750px){
+        height: 50rem;
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 5;
+      }
+
       .form-control {
         width: 80%;
         padding-left: 3rem;
@@ -48,6 +54,10 @@
 
         &::placeholder {
           color: $scarpa-flow-rgba;
+        }
+        @media only screen and (max-width: 750px){
+          margin: 1.5rem;
+          height: 5rem;
         }
       }
 
