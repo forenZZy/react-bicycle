@@ -1,0 +1,77 @@
+@import '../colors';
+
+.login {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: url('../res/img/header-bg.jpg') no-repeat center center;
+  background-size: cover;
+
+  .nav-logo {
+    margin: 0 2.5rem;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    transition: .3s;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    .form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 24rem;
+      font-family: 'Lato', sans-serif;
+      background: $white;
+      grid-column: 3 / span 2;
+      grid-row: 4 / span 3;
+
+      .form-control {
+        width: 80%;
+        padding-left: 3rem;
+        margin: 1rem;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        font-style: italic;
+        color: $scarpa-flow;
+        border: 1px solid $oslo-grey-rgba;
+
+        &::placeholder {
+          color: $scarpa-flow-rgba;
+        }
+      }
+
+      .login-btn {
+        padding: 1rem 2.5rem;
+        margin-top: 1rem;
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: $white;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: $silver-tree;
+        border: 0;
+        transition: background-color .2s;
+
+        &:hover {
+          background-color: $ocean-green;
+        }
+
+        &:active {
+          color: $white;
+          background-color: $oslo-grey;
+        }
+      }
+    }
+  }
+}
